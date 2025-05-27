@@ -1,0 +1,196 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 15px;
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.search-input {
+  padding: 12px 15px;
+  font-size: 1.1rem;
+}
+
+.search-button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+}
+
+.promo-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.promo-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.promo-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.promo-image:hover {
+  transform: translateY(-5px);
+}
+
+.kos-list-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.kos-list-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.kos-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.kos-card:hover {
+  transform: translateY(-5px);
+}
+
+.kos-card-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  height: 250px;
+}
+
+.kos-card-body {
+  padding: 20px;
+}
+
+.kos-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.kos-card-location {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.kos-card-price {
+  font-size: 1.3rem;
+  color: #2ecc71;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.kos-card-detail-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.kos-card-detail-btn:hover {
+  background-color: #218e50;
+}
+
+.no-kos-message {
+  font-size: 1.2rem;
+  color: #95a5a6;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.btn {
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
