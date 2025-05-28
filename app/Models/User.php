@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Models;
-
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany; // Ditambahkan: Import BelongsToMany
 
 class User extends Authenticatable
 {
@@ -21,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role', // Ditambahkan: Pastikan 'role' ada di fillable jika Anda menggunakannya
     ];
 
     /**
@@ -45,4 +45,16 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Relasi dengan Kos yang difavoritkan oleh pengguna ini.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function favorites(): BelongsToMany
+    {
+        // Nama tabel diubah menjadi 'favorite'
+        return $this->belongsToMany(Kos::class, 'favorite', 'user_id', 'kos_id')->withTimestamps();
+    }
 }
+
